@@ -24,6 +24,7 @@ for line in lines[5:]:
 df = pd.DataFrame(body, columns=headers)
 
 """
+分離されていた時のコード
 header = [",".join(headers)+"\n"]
 lines = header + lines[5:]
 lines = map(lambda v: v.replace('/', ','), lines) 
